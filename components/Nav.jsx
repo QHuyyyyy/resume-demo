@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 const links = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
     { name: "Resume", path: "/resume" },
     { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/contact" },
@@ -19,7 +19,7 @@ export default function Nav() {
                 return (
                     <Link href={link.path} key={index}
                         className={`${link.path === pathName && "text-accent border-b-2 border-accent "} 
-                        capitalize font-semibold text-mediumtransition - all duration - 300 ease -in -out hover:text-accent`}>
+                        capitalize font-semibold text-medium transition-all duration-300 ease-in-out hover:text-accent`}>
                         {link.name}
                     </Link>
                 );
