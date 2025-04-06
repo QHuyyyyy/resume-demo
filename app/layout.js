@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${jetBrainsMono.variable} antialiased`}
+        className={`${jetBrainsMono.variable}`}
       >
         {children}
       </body>
