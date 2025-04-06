@@ -11,11 +11,16 @@
   --color-accent: #00ff99;
   --color-hover: #00e187;
   --font-primary: var(--font-jetBrainsMono, monospace);
-  ;
+
 }
 
 @layer base {
   body {
     @apply font-primary leading-loose text-white bg-primary;
   }
+}
+
+@utility container {
+  padding-inline: 15px;
+  margin-inline: auto;
 }
