@@ -39,8 +39,8 @@ export default function Contact() {
                                 <Input type="phone" placeholder="Your Phone Number" />
                             </div>
                             <Select>
-                                <SelectTrigger className="w-full bg-primary font-light text-base border border-white/10 rounded-lg px-4 py-5  outline-none focus:border-accent">
-                                    <SelectValue className="placeholder:text-white/60" placeholder="Select a service" />
+                                <SelectTrigger  >
+                                    <SelectValue />
                                 </SelectTrigger>
                                 <SelectContent className="bg-[#27272c] text-white border border-gray-600 rounded-lg">
                                     <SelectGroup>
