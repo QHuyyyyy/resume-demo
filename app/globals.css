@@ -20,7 +20,7 @@
   }
 
   .h1 {
-    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+    @apply text-[40px] xl:text-[70px] leading-[1.1] font-semibold;
   }
 
   .h2 {
@@ -35,4 +35,5 @@
 @utility container {
   padding-inline: 15px;
   margin-inline: auto;
+  margin-top: 5px;
 }
