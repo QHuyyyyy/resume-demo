@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { Textarea } from "@/components/ui/textarea"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import Image from "next/image"
 const about =
 {
     title: "About Me",
@@ -241,7 +242,8 @@ export default function Resume() {
                                             <Tooltip>
                                                 <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl  flex items-center justify-center group">
                                                     <div className="transition-all duration-300">
-                                                        <img src={item.icon} alt={item.name} width="70vw" />
+                                                        <Image src={item.icon} alt={item.name} prioriry quality={100} width={80}
+                                                            height={80} />
                                                     </div>
 
                                                 </TooltipTrigger>
