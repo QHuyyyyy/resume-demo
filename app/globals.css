@@ -11,7 +11,6 @@
   --color-accent: #00ff99;
   --color-hover: #00e187;
   --font-primary: var(--font-jetBrainsMono, monospace);
-
 }
 
 @layer base {
@@ -30,10 +29,17 @@
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
+
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+
 }
 
 @utility container {
   padding-inline: 15px;
   margin-inline: auto;
   margin-top: 5px;
+  min-width: 320px;
+  max-width: 1300px;
 }

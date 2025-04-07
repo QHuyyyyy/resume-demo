@@ -19,7 +19,7 @@ export default function Nav() {
                 return (
                     <Link href={link.path} key={index}
                         className={`${link.path === pathName && "text-accent border-b-2 border-accent "} 
-                        capitalize font-semibold text-medium transition-all duration-300 ease-in-out hover:text-accent`}>
+                        capitalize font-semibold text-[16px] xl:text-[18px] transition-all duration-300 ease-in-out hover:text-accent`}>
                         {link.name}
                     </Link>
                 );

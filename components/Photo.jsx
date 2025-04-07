@@ -18,7 +18,7 @@ export default function Photo() {
                         opacity: 1,
                         transition: { delay: 1.4, duration: 0.4, ease: "easeInOut" },
                     }}
-                    className="absolute w-[280px] h-[298px] xl:w-[480px] xl:h-[498px] ">
+                    className="absolute w-[298px] h-[298px] xl:w-[490px] xl:h-[490px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <Image
                         fill
                         src={avatar}
