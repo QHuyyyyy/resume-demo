@@ -1,9 +1,9 @@
 "use client";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 const info = [
-    { icon: <FaPhoneAlt />, title: "Phone", content: "+1 234 567 890" },
+    { icon: <FaPhoneAlt />, title: "Phone", content: "+84 123456789" },
     { icon: <FaEnvelope />, title: "Email", content: "huynq.forwork@gmail.com" },
-    { icon: <FaMapMarkedAlt />, title: "Address", content: "123 Main St, City, Country" },
+    { icon: <FaMapMarkedAlt />, title: "Address", content: "Vinhomes Grand Park, District 9" },
 ]
 import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";

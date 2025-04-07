@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import avatar from "../public/assets/photo.png";
+import avatar from "../public/assets/photo2.png";
 export default function Photo() {
     return (
         <div className="w-full h-full relative">

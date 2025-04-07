@@ -21,7 +21,7 @@ const about =
         },
         {
             fieldName: "Phone",
-            fieldValue: "(+84) 342769804"
+            fieldValue: "(+84) 123456789"
         },
         {
             fieldName: "Email",
@@ -50,11 +50,6 @@ const experiences = {
             company: "FPT Software",
             duration: "1/2024 - Present",
         },
-        {
-            position: "Front-end Developer Intern",
-            company: "FPT Software",
-            duration: "1/2024 - Present",
-        },
 
     ]
 }
@@ -70,7 +65,12 @@ const education = {
         },
         {
             institution: "Coursera",
-            degree: "Full Stack Web Development",
+            degree: "Web Design for Everybody: Basics of Web Development & Coding",
+            duration: "2022",
+        },
+        {
+            institution: "Coursera",
+            degree: "Software Development Lifecycle",
             duration: "2022",
         },
         {
@@ -213,7 +213,7 @@ export default function Resume() {
                                                 rounded-xl flex flex-col justi
                                                 fy-center items-center lg:items-start gap-1 text-[18px]">
                                                     <span className="text-accent">{item.duration}</span>
-                                                    <h3 className="text-xl max-w-[300px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
+                                                    <h3 className="text-xl max-w-[300px] min-h-[80px] text-center lg:text-left">{item.degree}</h3>
                                                     <div className="flex items-center gap-3">
                                                         <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                                                         <p className="text-white/60">{item.institution}</p>
