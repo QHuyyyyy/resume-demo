@@ -24,8 +24,8 @@ const services = [
     },
     {
         nums: '04',
-        title: 'Web Development',
-        description: 'Developing scalable web solutions tailored to your business needs.',
+        title: 'SEO Optimization',
+        description: 'Improving website visibility and ranking on search engines through effective SEO strategies.',
         href: '',
     }
 ];
