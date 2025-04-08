@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'
+import React, { useState } from 'react'
 import { BsArrowDownRight } from "react-icons/bs"
 import Link from "next/link"
 import { motion } from "framer-motion";
@@ -31,6 +31,7 @@ const services = [
 ];
 
 export default function Service() {
+    const [isHovered, setIsHovered] = useState(false);
     return (
         <section className='min-h-[80vh] flex flex-col justify-center py-12 xl:py-0'>
             <div className='container'>
@@ -49,10 +50,13 @@ export default function Service() {
                     {services.map((service, index) => {
                         return (
                             <div key={index}
+                                onTouchStart={() => setIsHovered(true)}
+                                onTouchEnd={() => setIsHovered(false)}
                                 className='flex-1 flex flex-col justify-center gap-6 group'
                             >
                                 <div className='w-full flex justify-between items-center'>
-                                    <div className='text-5xl font-extrabold text-outline group-hover:[-webkit-text-stroke:1px_#00ff99] text-transparent transition-all duration-500'>
+                                    <div className={`text-5xl font-extrabold text-outline group-hover:[-webkit-text-stroke:1px_#00ff99] ${isHovered ? "group-hover:[-webkit-text-stroke:1px_#00ff99]" : ""
+                                        }`}>
                                         {service.nums}
                                     </div>
                                     <Link href={service.href}
