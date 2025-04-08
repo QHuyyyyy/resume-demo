@@ -3,7 +3,6 @@ import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-
 export default function Home() {
   return (
     <section className="h-full">
@@ -20,7 +19,7 @@ export default function Home() {
 
             <div className="flex flex-col items-center xl:flex-row gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                <span> Download CV</span>
+                <span>    <a href="/assets/CV.pdf" download="Resume_NguyenQuocHuy_4_2025">Download CV</a></span>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
@@ -35,7 +34,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Stats/>
+      <Stats />
     </section>
   );
 }
