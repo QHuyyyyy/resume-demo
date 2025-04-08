@@ -78,7 +78,8 @@ export default function Project() {
 
                             <h2 className="text-[42px] font-bold leading-none text-white transition-all duration-500">{project.title}</h2>
                             
-                            <p className="text-white/60"> <p className="text-white/60 text-[150%]">{project.category}</p>{project.description}</p>
+                            <nav className="text-white/60 text-[150%]">{project.category}</nav>
+                            <p className="text-white/60">{project.description}</p>
                             <ul className="flex gap-4 flex-wrap gap-2 ">
                                 {project.stack.map((item, index) => (
                                     <li key={index} className="text-accent text-xl ">
@@ -130,16 +131,22 @@ export default function Project() {
                             spaceBetween={30} slidesPerView={1} className="w-full xl:h-[520px] mb-12">
                             {projects.map((item, index) => (
                                 <SwiperSlide key={index} className="w-full ">
-                                    <div className="w-full h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                                    <div className="w-full h-[460px] relative group flex justify-center items-center bg-primary">
                                         <div className="absolute top-0 bottom-0 w-full bg-black/10 z-10"></div>
                                         <div className="relative w-full h-full">
-                                            <Image src={item.image} alt={item.title} fill className="object-cover" />
+                                            <Image 
+                                                src={item.image} 
+                                                alt={item.title} 
+                                                fill 
+                                                className="object-contain xl:object-cover"
+                                                priority 
+                                            />
                                         </div>
                                     </div>
                                 </SwiperSlide>
                             ))}
                             <WorkSliderBtns
-                                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)]
+                                containerStyles="hidden xl:flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)]
                             xl:bottom-0 z-20 w-full justufy-between xl:w-max xl:justify-none"
                                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all" />
                         </Swiper>
